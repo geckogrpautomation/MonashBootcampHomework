@@ -72,18 +72,19 @@ p {
     font-size: 20px;
     vertical-align: middle
 }
-Week1\assets\images\digital-marketing-meeting.jpg
 /*Content styling*/ 
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    background-image: url("./digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-}
+.hero img {
+
+    height: 1239px;
+    width: 1862px;
+    Padding: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+     
+  }
 
 .content {
     width: 77%;
