@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="temp.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <title>Template</title>
-    <!-- We link our html to the Bootstrap CDN -->
+
+    <!--includes for charting -->
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../GGTemplate/amcharts_4.10.11/amcharts4/examples/javascript/simple-line-chart/simplechart.css" />
   
 </head>
 
@@ -27,6 +29,8 @@
         <!--   Header end -->
                   
        <section class= "section">
+
+
 
   <!--   Navigation Start-->
   
@@ -186,10 +190,18 @@
         </nav>
 
  <!--   Navigation End-->
-      
-      <!--   Section ends here -->
+
+    <article>
+        <div id="chartdiv"></div>
+        <script src= "amcharts_4.10.11/amcharts4/core.js"></script>
+        <script src= "amcharts_4.10.11/amcharts4/charts.js"></script>
+        <script src= "amcharts_4.10.11/amcharts4/themes/animated.js"></script>
+        <script src= "amcharts_4.10.11/amcharts4/examples/javascript/simple-line-chart/index.js"></script>
+      <article>
+     
+    <!--   Section ends here -->
        </section>
-           
+         
         
     <footer class= "footer">
       <!--   Footer here-->
