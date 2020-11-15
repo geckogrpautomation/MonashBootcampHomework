@@ -5,6 +5,11 @@
     width: 1920px;
         
 }
+.container nav{
+
+    justify-content: center;
+
+}
 
 .header {
     
@@ -12,11 +17,11 @@
     left: 0px;
     height: 110px;
     width: 1920px;
-    background-color:whitesmoke;
+    background-color: #b6bbc2;
     outline-width: 1px;
     outline-color: black;
     display:flex;
-    border-bottom:1px solid #ba3131;
+    border-bottom:1px solid #404041;
 } 
  
     .header img{
@@ -24,17 +29,25 @@
     width:300px;
     height:91px;
     align-self: center;
-    
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+      
     }
   .header h1{
-    font-family: "Bookman";
-    color:black;
+    width: 1620px;  
+    font-family: 'Open Sans', sans-serif;
+    color:#242021;
     vertical-align: middle;
     text-align: center;
     font-size: 50px;   
     display: inline;
+    justify-self: center;
     align-self: center; 
-    text-align: center;     
+    text-align: center;   
+      
+    
 }
 
 .header h2 {
@@ -49,13 +62,14 @@
        
 }
 
+
 .section {
     position: relative;
     top: 0px;
     left: 0px;
     height: 675px;
     width: 1920px;
-    background-color: #404041;
+    background-color: White;
 } 
 
 .dropdown{
@@ -74,7 +88,7 @@
     top: 0px;
     left: 0px;
     height: 200px;
-    background-color: #ba3131;;
+    background-color: #f47321;
 } 
 
 /* Misc CSS*/
@@ -97,26 +111,39 @@
     
 }
 
-
+#navpad {
+    float: left;
+    display:inline;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-right:1px solid #C2C2C2;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+    width: 138px;
+    height: 38px;
+}
 /* Main Navigation */
 #nav {
     position:relative;
+    justify-content: center;
     width:1920px;
-    margin:0 auto;
-    
+ 
 }
  
 ul#navigation {
     margin:0px auto;
     position:relative;
-    float:left;
+    float: none;
     border-left:1px solid #c4dbe7;
     border-right:1px solid #c4dbe7;
 }
  
 ul#navigation li {
     display:inline;
-    font-size:16px;
+    font-size:18px;
     font-weight:bold;
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
@@ -124,12 +151,13 @@ ul#navigation li {
     float:left;
     position:relative;
     border-top:1px solid #c4dbe7;
-    border-bottom:2px solid #c4dbe7;
+    /* border-bottom:2px solid #c4dbe7;*/
+    border-bottom:1px solid #404041;
 }
  
 ul#navigation li a {
     padding:10px 25px;
-    color:#616161;
+    color:#404041;
     text-shadow:1px 1px 0px #fff;
     text-decoration:none;
     display:inline-block;
@@ -137,7 +165,6 @@ ul#navigation li a {
     border-left:1px solid #C2C2C2;
     border-top:1px solid #fff;
     background: #f5f5f5;
- 
     -webkit-transition:color 0.2s linear, background 0.2s linear;
     -moz-transition:color 0.2s linear, background 0.2s linear;
     -o-transition:color 0.2s linear, background 0.2s linear;
@@ -146,7 +173,7 @@ ul#navigation li a {
  
 ul#navigation li a:hover {
     background:#f8f8f8;
-    color:#ba3131;
+    color:#f47321;
     opacity: 0.5;
 }
 
@@ -162,7 +189,7 @@ ul#navigation li a.last {
 }
  
 ul#navigation li:hover > a {
-    background:#ba3131;
+    background:#f47321;
     opacity: 0.5;
 }
 
@@ -220,7 +247,7 @@ ul#navigation ul li {
 ul#navigation ul li a {
     background:none;
     padding:7px 15px;
-    color:#616161;
+    color: #404041;
     text-shadow:1px 1px 0px #fff;
     text-decoration:none;
     display:inline-block;
