@@ -1,0 +1,57 @@
+
+
+.container{
+
+top: 0px;
+left: 0px;
+outline-width: 1PX;
+outline-color: black;
+
+}
+
+
+.row div{
+
+    background-color: antiquewhite;
+    outline-width: 1PX;
+    outline-color: black;
+    text-align: center;
+
+
+}
+
+.col-lg-3 div{
+
+
+    background-color: antiquewhite;
+    outline-width: 1PX;
+    outline-color: black;
+    text-align: center;
+
+}
+
+.col-lg-6 div{
+
+
+    background-color: antiquewhite;
+    outline-width: 1PX;
+    outline-color: black;
+    text-align: center;
+
+}
+
+.col-lg-12 div {
+
+
+    background-color: antiquewhite;
+    outline-width: 1PX;
+    outline-color: black;
+    text-align: center;
+
+}
+
+
+ @media {width: ;
+
+
+ }

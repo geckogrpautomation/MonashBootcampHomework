@@ -10,7 +10,7 @@
     <!--includes for charting -->
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../GGTemplate/amcharts_4.10.11/amcharts4/examples/javascript/simple-line-chart/simplechart.css" />
-  
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
 </head>
 
 <body>
@@ -21,21 +21,19 @@
       <header class="header"> 
                 
         <img src= "./Pic/GeckoGrp-Logo.png" alt="Gecko Grp Pty Ltd Logo" >  
-          <h1>MENU</h1>
-          <img src= "./Pic/SGlogo.png" alt="Southern Generators Logo" >  
+        <h1>MENU</h1>
+        <img src= "./Pic/SGlogo.png" alt="Southern Generators Logo" >  
                
       </header>
         <!--   Header end -->
                   
        <section class= "section">
 
-
-
   <!--   Navigation Start-->
   
           <nav id="nav">
             <ul id="navigation">
-                    <li><div id= "navpad"></div> </li>
+                    <li><div id= "navpadstart"></div> </li>
                     <li><a href="#" class="first">Menu</a></li>
                     <li><a href="#">Generator A &raquo;</a>
                         <ul>
@@ -181,7 +179,7 @@
                               </ul>        
                         </ul>  
                                                                                              
-                      <li><div id= "navpad"></div> </li>                        
+                      <li><div id= "navpadend"></div> </li>                        
                   </ul>
 
               </ul>                  
@@ -191,15 +189,13 @@
  <!--   Navigation End-->
 
  <!-- Start embed JS Chart into page-->
-
-
  <iframe 
  title="Generator A - Trend 1" 
  src="./GeneratorA/Trend1.html"
  height= "100%"
  width= "100%">
-
 </iframe>
+
 
 <!-- End embed JS Chart into page--> 
     <!--   Section ends here -->

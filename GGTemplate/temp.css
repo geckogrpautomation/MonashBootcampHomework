@@ -34,7 +34,7 @@
     margin-top: 9px;
     margin-bottom: 9px;
       
-    }
+}
   .header h1{
     width: 1620px;  
     font-family: 'Open Sans', sans-serif;
@@ -72,48 +72,16 @@
     background-color: White;
 } 
 
-.dropdown{
-
-
-}
-
-.dropdown:hover {
-
-    color: #ba3131;
-
-}
-
-
-
 .footer {
     position: relative;
     top: 0px;
     left: 0px;
     height: 200px;
     background-color: #f47321;
+    width: 1920px;
 } 
 
-/* Misc CSS*/
-
-.center {
-
-    margin-left: auto;
-    margin-right: auto;  
-}
-
-.left {
-
-    margin-left: 0%;
-    
-}
-
-.right {
-
-    margin-right: 100%; 
-    
-}
-
-#navpad {
+#navpadstart {
     float: left;
     display:inline;
     margin:0;
@@ -124,15 +92,29 @@
     border-left:1px solid #C2C2C2;
     border-top:1px solid #fff;
     background: #f5f5f5;
-    width: 138px;
-    height: 38px;
+    width: 200px;
+    height: 36px;
+}
+
+#navpadend{
+    float: left;
+    display:inline;
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    border-right:1px solid #C2C2C2;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+    width: 210px;
+    height: 36px;
 }
 /* Main Navigation */
 #nav {
     position:relative;
     justify-content: center;
     width:1920px;
- 
 }
  
 ul#navigation {
@@ -145,7 +127,7 @@ ul#navigation {
  
 ul#navigation li {
     display:inline;
-    font-size:18px;
+    font-size:16px;
     font-weight:bold;
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
@@ -200,9 +182,7 @@ ul#navigation li:active > a {
 }
 
 /* Drop-Down Navigation */
-ul#navigation li:hover > ul
-
-{
+ul#navigation li:hover > ul{
 /*these 2 styles are very important,
 being the ones which make the drop-down to appear on hover */
     visibility:visible;
