@@ -1,29 +1,16 @@
-//<-------------------------------------------OBJECTS------------------------------------------->
-
-function Inquirer(fullName, type, message,choices,defaultChoice) {
-      
-    this.name = fullName;
-    this.type = type;
-    this.message = message;
-    this.choices = choices;
-    this.default = defaultChoice;
-    
-}
-
-
 
 //<-------------------------------------------CLASSES------------------------------------------->
 
 //Create Employee class. Base Class
 class Employee{
 
-    constructor(obj) {
-
-        this.fullName = obj.name;
-        this.id = obj.id;
-        this.email = obj.email;
-        this.className = Employee.name;   
-
+    constructor(fName,id,email,reportTo) {
+    
+        this.fullName = fName;
+        this.id = id;
+        this.email = email;
+        this.reportTo = reportTo
+    
     }
 
     getName(){
@@ -49,30 +36,37 @@ class Employee{
         return this.className; 
 
     }
+
+    get_LineMang(){
+
+        return this.reportTo;
+
+    }
     
 }
 
-
+  
+ 
 //Extend employee class to manager via the below. Extended class of Employee
-class Manager extends Employee{
-
-    constructor(obj) {
-
-      this.officePhone = obj.offPhone;
-      this.className = Manager.name;     
-
+class Manager extends Employee {
+    constructor(fName,id,email,reportTo,offPhone,className){
+    super(fName,id,email,reportTo);
+    this.officePhone = offPhone;
+    this.className = className;  
+    
     }
 }
 
 
 //Extend employee class to engineer via the below:
-
 class Engineer extends Employee{
 
-    constructor(obj) {
-
-      this.gitHub = obj.gitHub;
-      this.className = Engineer.name;        
+    constructor(fName,id,email,reportTo,gitHub,className) {
+    
+        super(fName,id,email,reportTo);
+        this.gitHub = gitHub;
+        this.className = className;  
+         
     }
 
     getGithub(){
@@ -84,14 +78,14 @@ class Engineer extends Employee{
 
 
 //Extend employee class to intern via the below:
-
 class Intern extends Employee{
-
-    constructor(obj) {
-        
-      this.school = obj.school;
-      this.className = Intern.name;     
-
+    
+    constructor(fName,id,email,reportTo,school,className){
+    
+        super(fName,id,email,reportTo); 
+        this.school = school;
+        this.className = className;        
+    
     }
 
     getSchool(){
@@ -102,36 +96,11 @@ class Intern extends Employee{
 }
 
 
-class InquirerInpNumCnfrmPass{
-    
-    constructor(obj) {
-    
-    [{
-        
-    v
-    
-    }];
-}
-}
-
-
-class InquirerListChkBx extends InquirerInpNumCnfrmPass{
-       
-    constructor(obj) {   
-    
-    [{
-        
-    
-    
-    }];
-
-}
-}
-
-
 module.exports = {
     
-    Inquirer      
+  Manager,
+  Engineer,
+  Intern     
 
 }
 
